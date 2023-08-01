@@ -1,7 +1,7 @@
 import os 
 
 list = open("target.txt")
-print = ("""
+print("""
 
                                                 ▄▄   ▄▄  
                                               ▀███   ██  
